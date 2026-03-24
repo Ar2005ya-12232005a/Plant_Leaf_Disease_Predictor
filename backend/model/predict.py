@@ -2,9 +2,19 @@ import tensorflow as tf
 import json
 import numpy as np
 from model.preprocess import preprocess_image
+import os
+import gdown
 
-# Load model
-model = tf.keras.models.load_model("model/plant_disease_model.h5")
+# 📌 Model path
+model_path = "model/plant_disease_model.h5"
+
+# 📥 Download model if not exists
+if not os.path.exists(model_path):
+    url = "https://drive.google.com/uc?id=115Y9qLNr2VwnRYC2Zmnzxhm-auaQuLmx"  
+    gdown.download(url, model_path, quiet=False)
+
+# ✅ Load model AFTER download
+model = tf.keras.models.load_model(model_path)
 
 # Load class names
 with open("model/class_names.json") as f:
