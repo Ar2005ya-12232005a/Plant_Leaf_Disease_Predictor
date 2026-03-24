@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Flask
+instance/
+.webassets-cache
+
+# Uploads (user images)
+backend/uploads/
+
+# Model files (VERY IMPORTANT - large files)
+*.h5
+*.hdf5
+*.pt
+*.pth
+
+# JSON (optional - keep if needed)
+# model/class_names.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Node (if you later use npm)
+node_modules/
+
+# Environment variables
+.env

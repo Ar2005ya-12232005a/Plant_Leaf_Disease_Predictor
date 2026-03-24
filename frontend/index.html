@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Disease Detection</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <h1>Plant Disease Detector</h1>
+
+    <!-- Upload Section -->
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="uploadImage()">Predict</button>
+
+    <!-- Preview -->
+    <div id="preview"></div>
+
+    <!-- Result -->
+    <div id="result"></div>
+
+    <!-- Chart -->
+    <canvas id="chart"></canvas>
+
+  </div>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
